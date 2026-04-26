@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap');
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.landing {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+background: url("https://images.unsplash.com/photo-1551882547-ff40c63fe5fa") no-repeat center/cover;  position: relative;
+}
+
+.landing::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.landing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.landing-card {
+  position: relative;
+  z-index: 1;
+
+  width: 650px;                /* ⬆️ bigger */
+  padding: 60px 70px;          /* ⬆️ more spacing */
+
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+transition: 0.4s ease;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+.landing-card:hover {
+  transform: scale(1.02);
+}
+
+.btn-group {
+  display: flex;
+  gap: 20px;            /* space between buttons */
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 14px 30px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.primary {
+  background: #3b82f6;
+  color: white;
+}
+
+.secondary {
+  background: #22c55e;
+  color: white;
+}
+/* 🔥 Brand Title (Luxury Style) */
+.brand-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #f5d17a; /* gold */
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+font-family: 'Playfair Display', serif !important;
+  text-shadow: 0 2px 10px rgba(245, 209, 122, 0.4);
+}
+
+
+/* ✨ Tagline */
+.tagline {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #e5e7eb; /* soft white */
+  opacity: 0.9;
+}
+
+
+.button-group button {
+  padding: 12px 28px;   /* bigger buttons */
+  font-size: 16px;
+  border-radius: 10px;
+  font-weight: 500;
+}
