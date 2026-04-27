@@ -360,6 +360,27 @@ room.assignedTo = staffName || "Unassigned";
   </div>
 </div>
 
+<div className="section">
+  <h2>🚨 Emergency Contacts</h2>
+
+  <div className="card contacts">
+    <p>
+  <span>👮 Police</span>
+  <strong>100</strong>
+</p>
+
+<p>
+  <span>🚑 Ambulance</span>
+  <strong>102</strong>
+</p>
+
+<p>
+  <span>🚒 Fire Brigade</span>
+  <strong>101</strong>
+</p>
+  </div>
+</div>
+
       {/* ✅ COMPLETED */}
       <div className="section">
         <h2>✅ Completed</h2>

@@ -61,8 +61,7 @@ export default function Login() {
   return (
     <div className="login-container">
       <form className="login-box" onSubmit={handleLogin}>
-        <h2>Hotel Crisis Login</h2>
-
+<h2 className="gold-title">Oberio Hotels</h2>
         {/* 🔹 Role Dropdown */}
         <select value={role} onChange={(e) => setRole(e.target.value)}>
           <option value="guest">Guest</option>

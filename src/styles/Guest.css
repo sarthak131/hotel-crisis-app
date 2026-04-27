@@ -92,8 +92,8 @@
 }
 
 .alert-panel {
-  background: rgba(239, 68, 68, 0.1);
-  border-left: 4px solid #ef4444;
+  background: rgba(250, 204, 21, 0.12);
+  border-left: 6px solid #facc15;
 }
 
 .service-panel {
@@ -437,4 +437,50 @@
   height: 12px;
   background: #3b82f6;
   transform: rotate(45deg);
+}
+.contacts {
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 5px solid #ef4444;
+}
+
+.contacts p {
+  margin: 10px 0;
+  font-size: 15px;
+}
+.contacts-panel {
+  background: rgba(15, 23, 42, 0.95);
+  padding-left: 20px;
+
+  box-shadow: inset 5px 0 0 #ef4444; /* 🔥 PERFECT STRIP */
+}
+
+/* Row layout */
+.contacts-panel p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(255,255,255,0.07);
+  padding: 10px 12px;
+  border-radius: 8px;
+
+  margin: 8px 0;
+  transition: 0.2s;
+}
+
+.contacts-panel p:hover {
+  background: rgba(255,255,255,0.12);
+  transform: translateX(4px);
+}
+
+/* Left text */
+.contacts-panel span {
+  color: #e5e7eb;
+}
+
+/* Right number */
+.contacts-panel strong {
+  color: #f97316;
+  font-size: 16px;
+  font-weight: 600;
 }

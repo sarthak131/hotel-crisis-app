@@ -282,14 +282,24 @@ floor: localStorage.getItem("guestFloor") || floor,      status: "Pending",
           <p>{lastService ? `${lastService.type} - ${lastService.status}` : "No services"}</p>
         </div>
 
-        <div className="panel tips-panel">
-          <h3>📌 Tips</h3>
-          <ul>
-            <li>Stay calm</li>
-            <li>Follow staff</li>
-            <li>Use exits</li>
-          </ul>
-        </div>
+        <div className="panel contacts-panel">
+  <h3>📞 Emergency Contacts</h3>
+
+  <p>
+    <span>👮 Police</span>
+    <strong>100</strong>
+  </p>
+
+  <p>
+    <span>🚑 Ambulance</span>
+    <strong>102</strong>
+  </p>
+
+  <p>
+    <span>🚒 Fire Brigade</span>
+    <strong>101</strong>
+  </p>
+</div>
       </div>
 
       {/* CHAT */}
