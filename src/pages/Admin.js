@@ -7,7 +7,10 @@ export default function Admin() {
   const [logs, setLogs] = useState([]);
   const [rooms, setRooms] = useState([]);
   const [showAlertsList, setShowAlertsList] = useState(false);
-
+const handleLogout = () => {
+  localStorage.removeItem("user"); // or "admin" based on your login key
+  window.location.href = "/"; // redirect to login page
+};
   // 🔥 RESET SYSTEM
   const resetSystem = () => {
     localStorage.clear();
@@ -135,8 +138,7 @@ const cleaningRooms = rooms.filter(
   // ✅ FIXED GUEST SYSTEM
   const activeGuests = rooms.filter(r => r.status === "Occupied");
   useEffect(() => {
-  let rooms = JSON.parse(localStorage.getItem("rooms"));
-
+let rooms = JSON.parse(localStorage.getItem("rooms")) || [];
   // 🔥 Create rooms if not present OR wrong size
   if (!rooms || rooms.length !== 24) {
     rooms = [];
@@ -161,9 +163,16 @@ const cleaningRooms = rooms.filter(
 }, []); 
 
   return (
-    <div className="admin-page">
+<div className="admin-page">
 
-      <h1>🛠️ Admin Dashboard</h1>
+  {/* 🔝 TOP BAR */}
+  <div className="top-bar">
+    <h1>🛠️ Admin Dashboard</h1>
+
+    <button className="logout-btn" onClick={handleLogout}>
+      🚪 Logout
+    </button>
+  </div>
 
       {/* 📊 STATS */}
       <div className="stats-grid">
